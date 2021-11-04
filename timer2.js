@@ -14,7 +14,7 @@ stdin.on('data', (key) => {
     process.stdin.write('Thanks for using me, ciao!\n');
     process.exit();
   } else if (key === 'b') {
-    process.stdout.write(key);
+    process.stdout.write(key + '\n');
     process.stdout.write('\x07')
   } else if (numlist.includes(key)) {
     process.stdout.write(`setting timer for ${key} seconds...\n`);
