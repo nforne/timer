@@ -13,9 +13,12 @@ stdin.on('data', (key) => {
     // \u0003 maps to ctrl+c input
     process.stdin.write('Thanks for using me, ciao!\n');
     process.exit();
-  } else if (key === 'b' || numlist.includes(key)) {
+  } else if (key === 'b') {
     process.stdout.write(key);
     process.stdout.write('\x07')
+  } else if (numlist.includes(key)) {
+    process.stdout.write(`setting timer for ${key} seconds...\n`);
+    setTimeout(() => process.stdout.write('\x07'), Number(key) * 1000);
   }
 });
 
