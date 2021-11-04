@@ -9,3 +9,6 @@ const timer1 = (alarms) => {
 };
 
 timer1(alarms); 
+
+// example
+// node timer1.js 2 3 4 5 6
