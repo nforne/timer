@@ -1,0 +1,4 @@
+-  node timer2.js
+-  b
+-  1-9
+-  cntrl+c
