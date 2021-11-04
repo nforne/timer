@@ -22,4 +22,4 @@ stdin.on('data', (key) => {
   }
 });
 
-console.log('after callback bipper: push the keys "b" or any 1-9 and listen!');
+console.log('after callback bipper: push the keys "b" or any 1-9 and listen!; cntrl+c to quit');
